@@ -3,9 +3,7 @@ angular.module('ion-image-search').
         "use strict";
 
         var searchProviders = {
-            Google: 'googleSearch',
             Bing: 'bingSearch',
-            Flickr: 'flickrSearch'
         };
 
         var imgSizes = {
@@ -19,36 +17,21 @@ angular.module('ion-image-search').
         };
 
         var defaultConfiguration = {
-            searchProviders: [searchProviders.Google, searchProviders.Bing, searchProviders.Flickr],
+            searchProviders: [searchProviders.Bing],
             imgSize: imgSizes.small,
-            fileType: fileTypes.jpg,
+            fileType: fileTypes.gif,
             maxSuccessiveFails: 5
-        };
-
-        var googleParams = {
-            address: 'https://www.googleapis.com/customsearch/v1?',
-            key: '',
-            customSearch: '',
-            pageSize: 10
         };
 
         var bingParams = {
             address: 'https://api.datamarket.azure.com/Bing/Search/v1/Image?',
-            key: '',
+            key: 'APLIGURMq0ikyaRYEMaiSvhVhlebR7E2LsLuj0fWYeg',
             auth: 'Basic ',
             pageSize: 50
         };
 
-        var flickrParams = {
-            address: 'https://api.flickr.com/services/rest/?method=flickr.photos.search&',
-            key: '',
-            pageSize: 100
-        };
-
         $provide.value('ionImageSearchProviders', searchProviders);
         $provide.value('ionImageSearchDefaultConfiguration', defaultConfiguration);
-        $provide.value('googleParams', googleParams);
         $provide.value('bingParams', bingParams);
-        $provide.value('flickrParams', flickrParams);
 
     });
