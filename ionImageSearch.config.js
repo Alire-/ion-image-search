@@ -34,7 +34,7 @@ angular.module('ion-image-search').
 
         var bingParams = {
             address: 'https://api.datamarket.azure.com/Bing/Search/v1/Image?',
-            key: 'PU/Dz6hlMYrbsluUEjPs9hQ5E+I/U+Gm37vYUsLu0rM',
+            key: 'APLIGURMq0ikyaRYEMaiSvhVhlebR7E2LsLuj0fWYeg',
             auth: 'Basic OlBVL0R6NmhsTVlyYnNsdVVFalBzOWhRNUUrSS9VK0dtMzd2WVVzTHUwck0=',
             pageSize: 50
         };
