@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <title></title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/1.3.1/css/ionic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://rawgit.com/souly1/ion-image-search/master/release/ionImageSearch.min.css" />
+    
+    <script src="http://code.ionicframework.com/1.3.1/js/ionic.bundle.min.js"></script>
+    <script src="https://rawgit.com/souly1/ion-image-search/master/release/ionImageSearch.min.js"></script>
+    <script src="ionImageSearch.config.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-app="imgsearchdemo">
+    <ion-pane ng-controller="MainCtrl">
+      <ion-header-bar class="bar-stable">
+        Ion Web Image Selector
+      </ion-header-bar>
+      <ion-content>
+        <button class="button" ng-click="onActivateWebView()">activate ion web image selector</button>
+        <div>current image: {{selectedImage}}</div>
+      </ion-content>
+    </ion-pane>
+  </body>
+
+</html>
